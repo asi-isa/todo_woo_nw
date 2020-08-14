@@ -1,0 +1,14 @@
+<h1>Sign Up</h1>
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+
+    <h3>{{ err_integrity }}</h3>
+    <h3>{{ err_passw_missmatch }}</h3>
+    
+    {{ form.as_p }}
+
+    <button type="submit" >Sign Up</button>
+
+</form>
